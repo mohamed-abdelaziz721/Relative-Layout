@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Realative_Layout_FB</string>
+    <string name="_2_5m_views">2.5M Views</string>
+    <string name="_100_comments">100 Comments</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="menu">menu</string>
+    <string name="post_image">Post image</string>
+    <string name="post_text_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="profile_owner">Mohamed Abdelaziz \nSBME, Cairo University</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_dimens">100dp</dimen>
+    <dimen name="more_menu">50dp</dimen>
+    <dimen name="Image_width">400dp</dimen>
+    <dimen name="image_height">300dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="comment_text_size">30sp</dimen>
+    <dimen name="image_margin">10dp</dimen>
+    <dimen name="text_margin">10dp</dimen>
+    <dimen name="name_text_size">15sp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="profile_name_margin">5dp</dimen>
+
+</resources>
