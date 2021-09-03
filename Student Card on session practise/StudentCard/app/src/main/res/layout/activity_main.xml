@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/mainCard_width"
+        android:layout_height="@dimen/mainCard_height"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/grey"
+        app:cardCornerRadius="@dimen/corners_radius">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/university"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/university_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/studentId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/university"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/margin_large"
+                android:text="@string/student_id"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/studentImage"
+                android:layout_width="@dimen/image_w_h"
+                android:layout_height="@dimen/image_w_h"
+                android:layout_below="@id/studentId"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/student_profile_picture_discribtion"
+                android:src="@drawable/mohamed2" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/margin_layout"
+                android:layout_marginTop="@dimen/margin_layout"
+                android:layout_marginEnd="@dimen/margin_layout"
+                android:layout_marginBottom="@dimen/margin_layout"
+                android:layout_toEndOf="@id/studentImage"
+                android:background="@drawable/solid">
+
+
+                <TextView
+                    android:id="@+id/fullName_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/full_name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/PersonName"
+                    android:layout_width="@dimen/fields_width"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fullName_label"
+                    android:layout_centerHorizontal="true"
+                    android:autofillHints="Student Full Name"
+                    android:background="@drawable/solid_rect"
+                    android:hint="@string/student_full_name"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/student_full_name"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_small" />
+
+
+                <TextView
+                    android:id="@+id/DOB_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/PersonName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/DOB"
+                    android:layout_width="@dimen/fields_width"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/DOB_label"
+                    android:layout_centerHorizontal="true"
+                    android:autofillHints="01 - 01 - 1111"
+                    android:background="@drawable/solid_rect"
+                    android:hint="@string/DOB"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/DOB"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_small" />
+
+
+                <TextView
+                    android:id="@+id/nationality_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/DOB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/nationality"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nationality"
+                    android:layout_width="@dimen/fields_width"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nationality_label"
+                    android:layout_centerHorizontal="true"
+                    android:autofillHints="Egyptian"
+                    android:background="@drawable/solid_rect"
+                    android:hint="@string/nationality"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/nationality"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/governorate_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nationality"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/residency_location"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/governorate"
+                    android:layout_width="@dimen/fields_width"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/governorate_label"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/solid_rect"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/location"
+                    android:hint="@string/location"
+                    android:autofillHints="Cairo, Egypt"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_small" />
+
+                <ImageView
+                    android:id="@+id/naid"
+                    android:layout_width="@dimen/logo_width"
+                    android:layout_height="@dimen/logo_height"
+                    android:layout_below="@+id/governorate"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:contentDescription="@string/naid_logo"
+                    android:src="@drawable/naid" />
+
+
+                <ImageView
+                    android:id="@+id/sprints"
+                    android:layout_width="@dimen/logo_width"
+                    android:layout_height="@dimen/logo_height"
+                    android:layout_below="@+id/governorate"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:contentDescription="@string/sprints_logo"
+                    android:src="@drawable/sprints" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

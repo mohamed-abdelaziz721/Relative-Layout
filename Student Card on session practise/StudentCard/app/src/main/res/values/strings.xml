@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Student Card</string>
+    <string name="university_name">Cairo University</string>
+    <string name="student_id">Student ID</string>
+    <string name="student_profile_picture_discribtion">Student Profile Picture</string>
+    <string name="full_name">Full Name</string>
+    <string name="student_full_name">Mohamed Ahmed Abdelaziz</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="DOB">21 - 07 - 1999</string>
+    <string name="nationality">Egyptian</string>
+    <string name="location">EL-Mahalla El-Kubra, Al-Gharbia</string>
+    <string name="residency_location">Residency Location</string>
+    <string name="naid_logo">NAID Logo</string>
+    <string name="sprints_logo">Sprints Logo</string>
+</resources>
