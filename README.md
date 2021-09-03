@@ -25,6 +25,14 @@ The image on the right is after adjustments.
   <img src="https://github.com/mohamed-abdelaziz721/Relative-Layout/blob/main/afterAdjust.png" width="300" />
 </p>
 
+
+```
+Added also Student card similar to the session, but with some additions and i also used card view.
+```
+<p align="center">
+  <img src="studentCard.jpg" width="300" />
+</p>
+
 ## Prerequisites
 
 A good Understanding of **Java**, **OOP**  and one of its GUI Components (Android Studio)\
