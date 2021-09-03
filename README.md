@@ -18,6 +18,14 @@
 This Project is part of the NAID Mobile App Internship hosted and managed by Sprints concerning relative layout.
 
 ```
+Added  Student card similar to the session, but with some additions and i also used card view.
+```
+<p align="center">
+  <img src="studentCard.jpg" width="300" />
+</p>
+
+
+```
 The image on the right is after adjustments.
 ```
 <p align="center">
@@ -26,12 +34,7 @@ The image on the right is after adjustments.
 </p>
 
 
-```
-Added also Student card similar to the session, but with some additions and i also used card view.
-```
-<p align="center">
-  <img src="studentCard.jpg" width="300" />
-</p>
+
 
 ## Prerequisites
 
