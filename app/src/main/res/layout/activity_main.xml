@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey">
 
 
     <ImageView
@@ -11,7 +12,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:contentDescription="@string/profile_picture"
-        android:src="@drawable/mohamed" />
+        android:src="@drawable/mohamed2" />
 
     <TextView
         android:id="@+id/name"
@@ -22,16 +23,17 @@
         android:layout_marginTop="@dimen/margin_text_toimage"
         android:layout_toEndOf="@id/imageLogo"
         android:text="@string/profile_owner"
+        android:textColor="@color/black"
         android:textSize="@dimen/name_text_size" />
 
     <ImageView
         android:id="@+id/menu"
         android:layout_width="@dimen/menu_dimen"
         android:layout_height="@dimen/more_menu"
+        android:layout_alignTop="@id/name"
+        android:layout_alignParentEnd="true"
         android:layout_marginEnd="@dimen/margin"
         android:contentDescription="@string/menu"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@id/name"
         android:src="@drawable/more_menu" />
 
 
@@ -81,6 +83,6 @@
         android:layout_marginEnd="@dimen/margin"
         android:layout_marginBottom="@dimen/margin"
         android:text="@string/_2_5m_views"
-        android:textSize="@dimen/comment_text_size"/>
+        android:textSize="@dimen/comment_text_size" />
 
 </RelativeLayout>
