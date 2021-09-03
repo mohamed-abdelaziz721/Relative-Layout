@@ -22,7 +22,7 @@ The image on the right is after adjustments.
 ```
 <p align="center">
   <img src="relative layout.jpg" width="300" />
-  <img src="afteradjust.png" width="300" />
+  <img src="https://github.com/mohamed-abdelaziz721/Relative-Layout/blob/main/afterAdjust.png" width="300" />
 </p>
 
 ## Prerequisites
