@@ -21,7 +21,7 @@ This Project is part of the NAID Mobile App Internship hosted and managed by Spr
 The image on the right is after adjustments.
 ```
 <p align="center">
-  <img src="relative layout.jpg" width="340" />
+  <img src="relative layout.jpg" width="300" />
   <img src="afteradjust.png" width="300" />
 </p>
 
