@@ -1,56 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
 
-    <LinearLayout
-        android:id="@+id/logoBar"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="@dimen/logo_dimens"
+        android:layout_height="@dimen/logo_dimens"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/profile_picture"
+        android:src="@drawable/mohamed" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin"
+        android:layout_alignTop="@id/imageLogo"
+        android:layout_marginStart="@dimen/profile_name_margin"
+        android:layout_marginTop="@dimen/margin_text_toimage"
+        android:layout_toEndOf="@id/imageLogo"
+        android:text="@string/profile_owner"
+        android:textSize="@dimen/name_text_size" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="@dimen/menu_dimen"
+        android:layout_height="@dimen/more_menu"
         android:layout_marginEnd="@dimen/margin"
-        android:orientation="horizontal">
+        android:contentDescription="@string/menu"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/name"
+        android:src="@drawable/more_menu" />
 
-
-        <ImageView
-            android:id="@+id/imageLogo"
-            android:layout_width="@dimen/logo_dimens"
-            android:layout_height="@dimen/logo_dimens"
-            android:layout_weight="1"
-            android:contentDescription="@string/profile_picture"
-            android:src="@drawable/mohamed" />
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="@dimen/profile_name_margin"
-            android:layout_weight="1"
-            android:text="@string/profile_owner"
-            android:textSize="@dimen/name_text_size" />
-
-        <ImageView
-            android:id="@+id/menu"
-            android:layout_width="27dp"
-            android:layout_height="@dimen/more_menu"
-            android:layout_weight=".2"
-            android:layout_gravity="center"
-            android:layout_marginStart="@dimen/margin"
-            android:layout_marginEnd="@dimen/margin"
-            android:contentDescription="@string/menu"
-            android:src="@drawable/more_menu" />
-
-    </LinearLayout>
 
     <TextView
         android:id="@+id/postText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/logoBar"
+        android:layout_below="@id/imageLogo"
+        android:layout_alignParentStart="true"
         android:layout_marginStart="@dimen/text_margin"
         android:layout_marginTop="@dimen/text_margin"
         android:layout_marginEnd="@dimen/text_margin"
@@ -64,44 +54,33 @@
         android:layout_width="@dimen/Image_width"
         android:layout_height="@dimen/image_height"
         android:layout_below="@+id/postText"
+        android:layout_alignParentStart="true"
         android:layout_marginStart="@dimen/margin"
         android:layout_marginTop="@dimen/image_margin"
         android:layout_marginEnd="@dimen/margin"
-        android:layout_marginBottom="@dimen/image_margin"
-        android:scaleType="fitXY"
         android:contentDescription="@string/post_image"
+        android:scaleType="fitXY"
         android:src="@drawable/rocket" />
 
-
-    <LinearLayout
-        android:id="@+id/numComment_numViews"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/numComment"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imagePost"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/numComment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin"
-            android:layout_marginBottom="@dimen/margin"
-            android:text="@string/_100_comments"
-            android:layout_weight="1"
-            android:textSize="@dimen/comment_text_size" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin"
+        android:text="@string/_100_comments"
+        android:textSize="@dimen/comment_text_size" />
 
-        <TextView
-            android:id="@+id/numViews"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/margin"
-            android:layout_marginBottom="@dimen/margin"
-            android:text="@string/_2_5m_views"
-            android:layout_weight="1"
-            android:textSize="@dimen/comment_text_size"/>
-
-    </LinearLayout>
-
-
-
+    <TextView
+        android:id="@+id/numViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagePost"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="@string/_2_5m_views"
+        android:textSize="@dimen/comment_text_size"/>
 
 </RelativeLayout>

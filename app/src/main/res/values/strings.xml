@@ -7,4 +7,6 @@
     <string name="post_image">Post image</string>
     <string name="post_text_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
     <string name="profile_owner">Mohamed Abdelaziz \nSBME, Cairo University</string>
+    <string name="view_student_card">View Student Card</string>
+    <string name="view_student_card_button">View Student Card Button</string>
 </resources>

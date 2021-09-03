@@ -11,5 +11,7 @@
     <dimen name="name_text_size">15sp</dimen>
     <dimen name="text_size">20sp</dimen>
     <dimen name="profile_name_margin">5dp</dimen>
+    <dimen name="margin_text_toimage">25dp</dimen>
+    <dimen name="menu_dimen">27dp</dimen>
 
 </resources>
